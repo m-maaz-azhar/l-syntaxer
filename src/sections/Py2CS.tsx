@@ -42,22 +42,22 @@ ${pythonCode}
 
     return (
         <section className='w-full text-center'>
-            <div className="flex space-x-5">
-                <div className="w-1/2">
-                    <Textarea
-                        value={codeSnippet}
-                        placeholder="Enter code snippet here"
-                        onChange={(e) => setCodeSnippet(e.target.value)}
-                    />
-                </div>
-                <div className="w-1/2">
-                    <Textarea
-                        value={convertedCodeSnippet}
-                        placeholder="Converted code snippet"
-                        onChange={() => { }}
-                    />
-                </div>
-            </div>
+            <p className="text-2xl text-center py-2">
+                Python
+            </p>
+            <Textarea
+                value={codeSnippet}
+                placeholder="Enter code snippet here"
+                onChange={(e) => setCodeSnippet(e.target.value)}
+            />
+            <p className="text-2xl text-center py-2">
+                C#
+            </p>
+            <Textarea
+                value={convertedCodeSnippet}
+                placeholder="Converted code snippet"
+                onChange={() => { }}
+            />
             <Button onClick={convertPythonToCSharp} text="Convert" />
         </section>
     )

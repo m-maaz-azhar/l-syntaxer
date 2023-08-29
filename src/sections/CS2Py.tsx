@@ -40,22 +40,22 @@ export default function CS2Py() {
 
     return (
         <section className='w-full text-center'>
-            <div className="flex space-x-5 w-full">
-                <div className="w-1/2">
-                    <Textarea
-                        placeholder="Enter code snippet here"
-                        onChange={(e) => setCodeSnippet(e.target.value)}
-                        value=''
-                    />
-                </div>
-                <div className="w-1/2">
-                    <Textarea
-                        placeholder="Converted code snippet"
-                        value={convertedCodeSnippet}
-                        onChange={() => { }}
-                    />
-                </div>
-            </div>
+            <p className="text-2xl text-center py-2">
+                C#
+            </p>
+            <Textarea
+                placeholder="Enter code snippet here"
+                onChange={(e) => setCodeSnippet(e.target.value)}
+                value=''
+            />
+             <p className="text-2xl text-center py-2">
+                Python
+            </p>
+            <Textarea
+                placeholder="Converted code snippet"
+                value={convertedCodeSnippet}
+                onChange={() => { }}
+            />
             <Button onClick={convertCSharpToPython} text="Convert" />
         </section>
     )
