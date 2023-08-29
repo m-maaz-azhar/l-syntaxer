@@ -1,4 +1,4 @@
-## Live @ [L-Syntaxer](https://)
+## Live @ [L-Syntaxer](https://l-syntaxer.vercel.app/)
 
 ## Features
 
